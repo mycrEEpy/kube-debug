@@ -7,7 +7,7 @@ OCI image for debugging Kubernetes pods.
 ### kubectl
 
 ```sh
-kubectl debug -it --image=ghcr.io/mycreepy/kube-debug:latest --namespace=[NAMESPACE] --target=[CONTAINER] [POD]
+kubectl debug -it --image=ghcr.io/mycreepy/kube-debug:latest --profile=restricted --namespace=[NAMESPACE] --target=[CONTAINER] [POD]
 ```
 
 ### k9s
@@ -23,5 +23,5 @@ plugins:
     background: false
     args:
       - -c
-      - 'kubectl debug -it --image=ghcr.io/mycreepy/kube-debug:latest --context=$CONTEXT --namespace=$NAMESPACE --target=$NAME $POD'
+      - 'kubectl debug -it --image=ghcr.io/mycreepy/kube-debug:latest --profile=restricted --context=$CONTEXT --namespace=$NAMESPACE --target=$NAME $POD'
 ```
