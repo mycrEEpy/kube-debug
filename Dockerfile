@@ -1,4 +1,4 @@
-FROM alpine:3.21
+FROM alpine:3.22
 
 RUN apk add --no-cache bash busybox-extras bind-tools curl htop jq openssh vim
 
