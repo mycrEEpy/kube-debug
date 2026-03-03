@@ -43,11 +43,19 @@ alias kdebug='NAMESPACE=$(kubectl get namespaces -o jsonpath="{.items[*].metadat
 #### Installing fzf
 
 Windows:
+
 ```sh
 winget install fzf
 ```
 
 Linux/macOS:
+
+```sh
+brew install fzf
+```
+
+or
+
 ```sh
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
