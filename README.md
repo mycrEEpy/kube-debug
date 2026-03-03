@@ -12,6 +12,12 @@ kubectl debug -it --image=ghcr.io/mycreepy/kube-debug:latest --profile=restricte
 
 ### k9s
 
+Find your k9s plugins location:
+```sh
+k9s info
+```
+
+Add to your plugins.yaml file:
 ```yaml
 plugins:
   debug:
